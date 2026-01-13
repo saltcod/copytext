@@ -2,6 +2,8 @@
 
 Chrome extension that adds copy buttons to specified elements on websites.
 
+![Screenshot](screenshot.jpg)
+
 ## Installation
 
 1. Go to `chrome://extensions/`
