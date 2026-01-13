@@ -2,8 +2,6 @@
 
 Chrome extension that adds copy buttons to specified elements on websites.
 
-![Screenshot](screenshot.jpg)
-
 ## Installation
 
 1. Go to `chrome://extensions/`
@@ -30,3 +28,5 @@ const SITE_CONFIG = [
 - Shows on hover (shadcn-style)
 - Works with dynamic content
 - Dark mode support
+
+![Screenshot](screenshot.jpg)
