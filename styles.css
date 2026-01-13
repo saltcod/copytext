@@ -1,0 +1,66 @@
+/* CopyText extension styles - minimal shadcn-style */
+
+.copytext-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  z-index: 1000;
+  color: hsl(240 5% 64.9%);
+  opacity: 0;
+}
+
+.copytext-button:hover {
+  background: hsl(240 5% 96%);
+  color: hsl(240 6% 10%);
+}
+
+.copytext-button:active {
+  background: hsl(240 5% 90%);
+}
+
+.copytext-button svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.5;
+}
+
+/* Show button on parent hover */
+*:hover > .copytext-button {
+  opacity: 1;
+}
+
+.copytext-button-success {
+  color: hsl(142 76% 36%) !important;
+  opacity: 1 !important;
+}
+
+.copytext-button-error {
+  color: hsl(0 84% 60%) !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .copytext-button {
+    color: hsl(240 5% 64.9%);
+  }
+  
+  .copytext-button:hover {
+    background: hsl(240 4% 16%);
+    color: hsl(240 5% 96%);
+  }
+  
+  .copytext-button:active {
+    background: hsl(240 4% 20%);
+  }
+}
